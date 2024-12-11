@@ -84,7 +84,7 @@ header{
 }
 
 .mobile-nav a:hover {
-	background-color: #ffffff;
+	background-color: #865c5c;
 }
 
 @media (min-width: 768px) {
