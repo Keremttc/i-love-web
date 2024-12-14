@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Varela+Round&display=swap');
+
+
+*{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #303030;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #DBD8D1;
+    background-size: cover;
+
+}
+
+
+.navbar{
+    font-size: 10px;
+    width: 30%;
+    display: flex;
+    padding: 40px 0;
+    margin: auto;
+    align-items: center;
+    word-spacing: 15px;
+    display: none;
+
+    @media (min-width: 769px) {
+        display: block;
+    }
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #FFF;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    backdrop-filter: blur(10px);
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    border-radius: 1em;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #303030;
+    color: #DBD8D1;
+    text-decoration: none;
+}
+
+.mobile-nav a:hover {
+    background-color: #6e6e6e;
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+
+    main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    }
+
+    h1{
+    font-size: 40px;
+    }
+
+    .astro-gif{
+        width: 300px;
+        height: auto;
+    }
+
+    p.intro-text{
+        font-size: 15px;;
+        text-align: center;
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid transparent;
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+    footer{
+        padding-top: 100px;
+        padding-right: 50px;
+        text-align: center;
+        font-size: 16px;
+
+    }
