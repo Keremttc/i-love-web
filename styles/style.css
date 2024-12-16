@@ -75,22 +75,23 @@
 	.button{
 		font-family: "Orbitron", sans-serif;
 		position: absolute;          
-
 		color: #ffffff;
 		padding: 13px 13px;
 		font-weight: bold;
 		transition: all 0.3s ease;
-		margin-left: 41.5%;
-
-
-
-
+		margin-left: 31%;
 		background-color:#1a91c0d5;
 		border: 1px solid #1a91c0d5;
 		border-radius: 5px;
 		color: white;  
 		cursor: pointer;
-		width: 15%;
+		width: 27%;
+
+		@media (min-width: 800px) {
+            width: 14%;
+			margin-left: 42%;
+        }
+
 	}
 
 	.button:hover {
